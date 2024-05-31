@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using MemoryToolkit.Maui;
+using Microsoft.Extensions.Logging;
 
 namespace MauiGroupedCollectionMemoryLeak
 {
@@ -15,9 +16,11 @@ namespace MauiGroupedCollectionMemoryLeak
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-#if DEBUG
-    		builder.Logging.AddDebug();
-#endif
+            // Configure logging
+            builder.Logging.AddDebug();
+
+            // Ensure UseLeakDetection is called after logging has been configured!
+            builder.UseLeakDetection();
 
             return builder.Build();
         }
