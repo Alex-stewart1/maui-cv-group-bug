@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiGroupedCollectionMemoryLeak.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiGroupedCollectionMemoryLeak"
+    x:DataType="local:MainPage">
+
+    <Grid Margin="20" RowDefinitions="3*, *">
+        <CollectionView
+            x:Name="AnimalCollectionView"
+            Margin="20"
+            IsGrouped="True"
+            ItemsSource="{x:Binding AnimalCollection}">
+            <!--  Comment this out and the page is eligible for GC  -->
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate x:DataType="local:AnimalGroup">
+                    <Label Text="{Binding Key}" />
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
+            <!--  Comment this out and the page is eligible for GC  -->
+        </CollectionView>
+
+
+        <Button
+            Clicked="Button_Clicked"
+            HeightRequest="50"
+            Text="Back" />
+    </Grid>
+</ContentPage>

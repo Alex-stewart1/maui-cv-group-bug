@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiGroupedCollectionMemoryLeak.HostPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="HostPage">
+
+    <VerticalStackLayout Margin="20" Spacing="20">
+        <Label HorizontalOptions="Center" Text="Host Page" />
+        <Button
+            Clicked="Button_Clicked"
+            HeightRequest="50"
+            Text="Main page" />
+        <Button
+            Clicked="Button_Clicked_1"
+            HeightRequest="50"
+            Text="GC" />
+    </VerticalStackLayout>
+</ContentPage>
