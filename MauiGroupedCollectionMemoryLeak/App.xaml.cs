@@ -1,4 +1,6 @@
-﻿namespace MauiGroupedCollectionMemoryLeak
+﻿using MauiGroupedCollectionMemoryLeak.UI;
+
+namespace MauiGroupedCollectionMemoryLeak
 {
     public partial class App : Application
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.Diagnostics;
 
-namespace MauiGroupedCollectionMemoryLeak;
+namespace MauiGroupedCollectionMemoryLeak.UI;
 
 public partial class MainPage : ContentPage
 {

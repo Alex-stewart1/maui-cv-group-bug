@@ -19,8 +19,6 @@ namespace MauiGroupedCollectionMemoryLeak
             // Configure logging
             builder.Logging.AddDebug();
 
-            builder.UseLeakDetection();
-
             return builder.Build();
         }
     }

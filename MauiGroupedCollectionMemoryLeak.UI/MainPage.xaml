@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="MauiGroupedCollectionMemoryLeak.MainPage"
+    x:Class="MauiGroupedCollectionMemoryLeak.UI.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MauiGroupedCollectionMemoryLeak"
-    xmlns:mtk="clr-namespace:MemoryToolkit.Maui;assembly=MemoryToolkit.Maui"
-    mtk:LeakMonitorBehavior.Cascade="True"
+    xmlns:local="clr-namespace:MauiGroupedCollectionMemoryLeak.UI"
     x:DataType="local:MainPage">
 
     <Grid Margin="20" RowDefinitions="3*, *">

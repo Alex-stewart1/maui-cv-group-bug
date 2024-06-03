@@ -1,4 +1,4 @@
-namespace MauiGroupedCollectionMemoryLeak;
+namespace MauiGroupedCollectionMemoryLeak.UI;
 
 public partial class HostPage : ContentPage
 {
