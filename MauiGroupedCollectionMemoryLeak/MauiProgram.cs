@@ -19,7 +19,6 @@ namespace MauiGroupedCollectionMemoryLeak
             // Configure logging
             builder.Logging.AddDebug();
 
-            // Ensure UseLeakDetection is called after logging has been configured!
             builder.UseLeakDetection();
 
             return builder.Build();

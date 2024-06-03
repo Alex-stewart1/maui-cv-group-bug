@@ -25,9 +25,6 @@ public partial class MainPage : ContentPage
         InitializeComponent();
 
         BindingContext = this;
-
-        AnimalCollectionView.ItemsSource = AnimalCollection;
-
     }
 
     private async void Button_Clicked(object sender, EventArgs e)
